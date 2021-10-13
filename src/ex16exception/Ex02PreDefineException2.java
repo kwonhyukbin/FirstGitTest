@@ -1,0 +1,26 @@
+package ex16exception;
+
+import java.util.Scanner;
+
+public class Ex02PreDefineException2
+{
+
+	public static void main(String[] args)
+	{
+       System.out.println("### NumberFormatException ###");
+       Scanner sc = new Scanner(System.in);
+       try {
+    	   System.out.println("나이를 입력하세요");
+    	   String strAge = sc.nextLine();
+    	   //"10살"과 같이 입력하면 숫자로 변환시 예외가 발생한다.
+    	   int ageAfter10 = Integer.parseInt(strAge)+10;
+    	   System.out.println("당신의 10년후 나이는:"+ ageAfter10);
+       }
+       catch(NumberFormatException e) {
+    	   System.out.println("나이는 숫자로만 입력해야 합니다.");
+    	   System.out.println("예외메시지:"+ e.getMessage());
+    	   e.printStackTrace();
+       }
+	}
+
+}
