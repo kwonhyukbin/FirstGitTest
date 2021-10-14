@@ -311,7 +311,8 @@ class FriendInfoHandler
 	}//// end of deleteInfo
 
 	/*
-	 * 연습문제] 친구정보를 파일로 직렬화하기위한 메서드를 정의하시오. 프로그램 종료시 컬렉션에 저장된 모든 친구객체를 파일로 저장해야 한다.
+	 * 연습문제] 친구정보를 파일로 직렬화하기위한 메서드를 정의하시오.
+	 *  프로그램 종료시 컬렉션에 저장된 모든 친구객체를 파일로 저장해야 한다.
 	 * 저장할파일명 : friend_info.obj
 	 */
 	public void saveFriendInfo()
