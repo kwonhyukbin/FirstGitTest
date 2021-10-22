@@ -22,7 +22,7 @@ public class E05ShortCircuitEvaluation
 		System.out.println("num1="+ num1 +",num2="+ num2);
 		
 		/*
-		 논리 OR의 경우 둘중 하나만 true이면 true를 반환하ㅡ로
+		 논리 OR의 경우 둘중 하나만 true이면 true를 반환하므로
 		 첫번째 조건이 true이면 두번째 조건은 검사(실행)하지 않는다.
 		 */
 		result = (num1+=10)>0 || (num2+=10)>0;
